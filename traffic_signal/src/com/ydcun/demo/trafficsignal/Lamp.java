@@ -8,8 +8,8 @@ package com.ydcun.demo.trafficsignal;
  *
  */
 public enum Lamp {
-	S2N("N2S","S2W",false),S2W("N2E","E2W",false),E2W("W2E","E2S",false),E2S("W2N","S2N",false),
-	N2S(null,null,false),N2E(null,null,false),W2E(null,null,false),W2N(null,null,false),
+	S2N("N2S","E2W",false),E2W("W2E","E2S",false),E2S("W2N","S2W",false),S2W("N2E","S2N",false),
+	N2S(null,null,false),W2E(null,null,false),W2N(null,null,false),N2E(null,null,false),
 	S2E(null,null,true),E2N(null,null,true),N2W(null,null,true),W2S(null,null,true);
 	
 	private String opposite;

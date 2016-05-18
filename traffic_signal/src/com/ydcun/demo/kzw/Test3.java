@@ -74,7 +74,7 @@ class TestDo1 {
 	public void doSome(Object key, String value) {
 		Object o = key;
 		if(!list.contains(o)){
-			list.add(o);
+			list.add(o);//其它线程在迭代的时候如果是用的arrylist就不能add
 		}else{
 			Iterator it = list.iterator();
 			while(it.hasNext()){
